@@ -106,7 +106,7 @@ function DeleteX(el) {
         mainArray.splice(el, 1);
         updateLocalStorage();
         showData();
-        if (mainArray.length < 0) {
+        if (mainArray.length < 1) {
           noData();
         }
         emptying();
