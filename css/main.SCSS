@@ -1,0 +1,150 @@
+// shared variables
+$white: #fff;
+$gray: #969696;
+$black: #000;
+$mainColor: #aeffbd;
+$secColor: #056372;
+$thirdColor: #001220;
+$thirdColor60: #00111f99;
+$secColor60: #05637299;
+
+::selection {
+  background-color: $mainColor;
+  color: $thirdColor;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: $mainColor;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background: url("../img/blob-scene-haikei.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#inputs {
+  .container {
+    .form {
+      background-color: $thirdColor60;
+      color: $white;
+      backdrop-filter: blur(10px);
+      .row {
+        div {
+          input,
+          textarea {
+            &::placeholder {
+              color: $gray;
+            }
+            padding: 0.5rem;
+            background: transparent;
+            box-shadow: none;
+            color: $white;
+            border: 2px solid $white;
+            transition: 0.5s;
+            &:focus {
+              border: 2px solid $mainColor;
+            }
+          }
+          textarea {
+            height: 7rem;
+            resize: none;
+          }
+          input[type="number"]::-webkit-inner-spin-button {
+            display: none;
+          }
+          .Add {
+            background-color: #aeffbd;
+          }
+          .Save {
+            background-color: #aebaff;
+            display: none;
+          }
+          button {
+            color: $black;
+            padding: 0.5rem 1rem;
+            opacity: 0.8;
+            transition: 0.5s;
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.disabled {
+  opacity: 0.2 !important;
+}
+#result {
+  .container {
+    .row {
+      overflow-x: overlay;
+      margin: 0;
+      .table-dark {
+        --bs-table-bg: rgb(0 18 32 / 50%);
+        --bs-table-striped-bg: rgb(51 161 155 / 25%);
+        backdrop-filter: blur(10px);
+        tr {
+          td {
+            vertical-align: middle;
+          }
+        }
+        #tbody {
+          .noData {
+            padding: 1rem;
+            font-weight: 600;
+          }
+          tr {
+            .Update {
+              background-color: #ffecae;
+            }
+            .Delete {
+              background-color: #ff9696;
+            }
+            button {
+              color: $black;
+              padding: 0.5rem 1rem;
+              opacity: 0.8;
+              transition: 0.5s;
+              &:hover {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.swal2-popup {
+background: #062b3cb3 !important;
+color: #ffffff !important;
+backdrop-filter: blur(5px) !important;
+}
+.swal2-actions {
+  gap: 10px;
+}
+button.swal2-cancel.btn.btn-danger,
+button.swal2-confirm.btn.btn-success {
+  opacity: 0.8;
+  transition: 0.5s;
+  &:hover {
+    opacity: 1;
+  }
+}
+button.swal2-cancel.btn.btn-danger {
+  background-color: #f04a4a;
+  border: 2px solid #f04a4a;
+}
+button.swal2-confirm.btn.btn-success {
+  background-color: #398831;
+  border: 2px solid #398831;
+}

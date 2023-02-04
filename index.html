@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CRUD System">
+  <link rel="shortcut icon" href="img/gear-solid.svg">
+  <title>CRUD System</title>
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- sweetalert2 css -->
+  <link rel="stylesheet" href="css/sweetalert2.min.css">
+  <!-- google fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!-- main css file -->
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body class="custom-scrollbar" id="index">
+
+  <section section id="inputs" class=" pt-5 ">
+    <div class="container">
+      <div class="form p-3 needs-validation">
+        <div class="row">
+          <div class="mb-3 col-sm-4">
+            <label for="exampleFormControlInput1" class="form-label">Product Name</label>
+            <input type="text" class="form-control inputEmpty" id="exampleFormControlInput1" placeholder="Product Name">
+          </div>
+          <div class="mb-3 col-sm-4">
+            <label for="exampleFormControlInput2" class="form-label">Product Price</label>
+            <input type="number" class="form-control inputEmpty" id="exampleFormControlInput2"
+              placeholder="product Price">
+          </div>
+          <div class="mb-3 col-sm-4">
+            <label for="exampleFormControlInput3" class="form-label">Product Category</label>
+            <input type="text" class="form-control inputEmpty" id="exampleFormControlInput3"
+              placeholder="Product Category">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Product Description</label>
+            <textarea class="form-control inputEmpty" id="exampleFormControlTextarea1"
+              placeholder="Product Description"></textarea>
+          </div>
+          <div class="mb-3">
+            <button id="Add" class="Add btn">Add</button>
+            <button id="Save" class="Save btn">Save</button>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput4" class="form-label">Search</label>
+            <input type="search" class="form-control" id="exampleFormControlInput4"
+              placeholder="Search By Product Name">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section section id="result">
+    <div class="container">
+      <div class="row">
+        <table class="table table-dark table-striped text-center mt-3">
+          <thead>
+            <tr>
+              <td>ID</td>
+              <td>Product Name</td>
+              <td>product Price</td>
+              <td>Product Category</td>
+              <td>Product Description</td>
+              <td>Update</td>
+              <td>Delete</td>
+            </tr>
+          </thead>
+          <tbody id="tbody" class="table-group-divider">
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- sweetalert2 js -->
+  <script src="js/sweetalert2.all.min.js"></script>
+  <!-- jquery -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- font awesome -->
+  <script src="js/all.min.js"></script>
+  <!-- main js file -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

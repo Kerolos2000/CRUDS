@@ -1,0 +1,147 @@
+::-moz-selection {
+  background-color: #aeffbd;
+  color: #001220;
+}
+
+::selection {
+  background-color: #aeffbd;
+  color: #001220;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #aeffbd;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background: url("../img/blob-scene-haikei.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#inputs .container .form {
+  background-color: rgba(0, 17, 31, 0.6);
+  color: #fff;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+#inputs .container .form .row div input,
+#inputs .container .form .row div textarea {
+  padding: 0.5rem;
+  background: transparent;
+  box-shadow: none;
+  color: #fff;
+  border: 2px solid #fff;
+  transition: 0.5s;
+}
+#inputs .container .form .row div input::-moz-placeholder, #inputs .container .form .row div textarea::-moz-placeholder {
+  color: #969696;
+}
+#inputs .container .form .row div input:-ms-input-placeholder, #inputs .container .form .row div textarea:-ms-input-placeholder {
+  color: #969696;
+}
+#inputs .container .form .row div input::placeholder,
+#inputs .container .form .row div textarea::placeholder {
+  color: #969696;
+}
+#inputs .container .form .row div input:focus,
+#inputs .container .form .row div textarea:focus {
+  border: 2px solid #aeffbd;
+}
+#inputs .container .form .row div textarea {
+  height: 7rem;
+  resize: none;
+}
+#inputs .container .form .row div input[type=number]::-webkit-inner-spin-button {
+  display: none;
+}
+#inputs .container .form .row div .Add {
+  background-color: #aeffbd;
+}
+#inputs .container .form .row div .Save {
+  background-color: #aebaff;
+  display: none;
+}
+#inputs .container .form .row div button {
+  color: #000;
+  padding: 0.5rem 1rem;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+#inputs .container .form .row div button:hover {
+  opacity: 1;
+}
+
+.disabled {
+  opacity: 0.2 !important;
+}
+
+#result .container .row {
+  overflow-x: overlay;
+  margin: 0;
+}
+#result .container .row .table-dark {
+  --bs-table-bg: rgb(0 18 32 / 50%);
+  --bs-table-striped-bg: rgb(51 161 155 / 25%);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+#result .container .row .table-dark tr td {
+  vertical-align: middle;
+}
+#result .container .row .table-dark #tbody .noData {
+  padding: 1rem;
+  font-weight: 600;
+}
+#result .container .row .table-dark #tbody tr .Update {
+  background-color: #ffecae;
+}
+#result .container .row .table-dark #tbody tr .Delete {
+  background-color: #ff9696;
+}
+#result .container .row .table-dark #tbody tr button {
+  color: #000;
+  padding: 0.5rem 1rem;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+#result .container .row .table-dark #tbody tr button:hover {
+  opacity: 1;
+}
+
+.swal2-popup {
+  background: rgba(6, 43, 60, 0.7019607843) !important;
+  color: #ffffff !important;
+  -webkit-backdrop-filter: blur(5px) !important;
+          backdrop-filter: blur(5px) !important;
+}
+
+.swal2-actions {
+  gap: 10px;
+}
+
+button.swal2-cancel.btn.btn-danger,
+button.swal2-confirm.btn.btn-success {
+  opacity: 0.8;
+  transition: 0.5s;
+}
+button.swal2-cancel.btn.btn-danger:hover,
+button.swal2-confirm.btn.btn-success:hover {
+  opacity: 1;
+}
+
+button.swal2-cancel.btn.btn-danger {
+  background-color: #f04a4a;
+  border: 2px solid #f04a4a;
+}
+
+button.swal2-confirm.btn.btn-success {
+  background-color: #398831;
+  border: 2px solid #398831;
+}/*# sourceMappingURL=main.css.map */
